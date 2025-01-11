@@ -1,0 +1,244 @@
+import React from 'react'
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Image,
+  Stack,
+  Button,
+  Link,
+  Container,
+} from '@chakra-ui/react'
+
+const Home: React.FC = () => {
+  return (
+  <Box bg="rgba(255, 179, 53, 0)" minH="100vh">
+    <Box bg="rgba(0, 0, 0, 0)" color="black" p={6} maxW="1000px" mx="auto">
+    <Container maxW="container.xl" py={8}>
+      {/* Header Section */}
+          {/* Header */}
+          <Flex align="center" justifyContent="space-between" mb={6}>
+            <Flex align="center">
+              <Text fontSize="xl" fontWeight="bold">
+                Golden Wombat Token
+              </Text>
+            </Flex>
+            <w3m-button />
+          </Flex>
+      <Flex
+        direction="column"
+        align="center"
+        bg="yellow.300"
+        p={8}
+        mb={8}
+        borderRadius="md"
+        boxShadow="lg"
+      >
+        <Heading fontSize={{ base: '3xl', md: '5xl' }} mb={3}>
+          Golden Wombat Token
+        </Heading>
+        <Text fontSize="lg" textAlign="center" maxW="700px">
+          The Fair Dinkum, Aussie-Themed Meme Token on Roburna Chain!
+        </Text>
+      </Flex>
+
+      {/* Hero Section - Images */}
+      <Stack direction={{ base: 'column', md: 'row' }} spacing={4} mb={8}>
+        <Image
+          src="https://cdn.pixabay.com/photo/2015/09/23/03/22/wombat-951161_1280.jpg"
+          alt="Wombat 1"
+          boxSize="100%"
+          maxW={{ base: '100%', md: '33%' }}
+          borderRadius="md"
+          objectFit="cover"
+          boxShadow="md"
+        />
+        <Image
+          src="https://cdn.pixabay.com/photo/2016/02/07/07/30/wombat-1186174_1280.jpg"
+          alt="Wombat 2"
+          boxSize="100%"
+          maxW={{ base: '100%', md: '33%' }}
+          borderRadius="md"
+          objectFit="cover"
+          boxShadow="md"
+        />
+        <Image
+          src="https://cdn.pixabay.com/photo/2018/11/13/01/54/wombat-3813480_1280.jpg"
+          alt="Wombat 3"
+          boxSize="100%"
+          maxW={{ base: '100%', md: '33%' }}
+          borderRadius="md"
+          objectFit="cover"
+          boxShadow="md"
+        />
+      </Stack>
+
+      {/* About Section */}
+      <Box bg="rgba(0, 0, 0, 0.3)" p={6} borderRadius="md" boxShadow="md" mb={8}>
+        <Heading fontSize="2xl" color="yellow.500" mb={4} id="about">
+          Why Wombats Are So Ridgy-Didge
+        </Heading>
+        <Text mb={4}>
+          Wombats are the{' '}
+          <Text as="span" fontWeight="bold" color="yellow.600">
+            true blue Aussie legends
+          </Text>{' '}
+          of the marsupial world—cuddly, tough, and downright adorable! Their
+          square poops are proof that they’re one-of-a-kind. We’re celebrating
+          these ripper critters with the <strong>Golden Wombat Token</strong>, a
+          cheeky meme token that combines wombat cuteness with some bonzer DeFi
+          potential. Jump on in, mates!
+        </Text>
+      </Box>
+
+      {/* Tokenomics Section */}
+      <Box bg="rgba(0, 0, 0, 0.3)" p={6} borderRadius="md" boxShadow="md" mb={8} id="tokenomics">
+        <Heading fontSize="2xl" color="yellow.500" mb={4}>
+          Tokenomics (Crikey, Have a Captain Cook!)
+        </Heading>
+        <Text mb={4}>
+          Golden Wombat Token (<strong>GWT</strong>) is on the{' '}
+          <strong>Roburna Chain</strong>, built to reward holders, pump the
+          value, and keep the Wombat community stoked!
+        </Text>
+
+        <Flex
+          wrap="wrap"
+          gap={6}
+          justify="space-between"
+          align="center"
+          bg="gray.50"
+          p={4}
+          borderRadius="md"
+        >
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Token Name:</Text>
+            <Text>Golden Wombat Token</Text>
+          </Box>
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Symbol:</Text>
+            <Text>GWT</Text>
+          </Box>
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Total Supply:</Text>
+            <Text>100,000,000 GWT</Text>
+          </Box>
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Buy Tax:</Text>
+            <Text>2%</Text>
+          </Box>
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Sell Tax:</Text>
+            <Text>3%</Text>
+          </Box>
+          <Box flex="1" minW="220px">
+            <Text fontWeight="bold">Contract Address:</Text>
+            <Text>0xF1aCF10Ea8CE2160Acf112B29d028B5f7607192f</Text>
+          </Box>
+        </Flex>
+
+        <Text mt={4}>
+          It’s loaded with <strong>utility</strong>,{' '}
+          <strong>passive rewards</strong>, and the meme factor.
+          Fair dinkum, we’re digging all the way to the crypto moon, mates!
+        </Text>
+      </Box>
+
+      {/* Roadmap Section */}
+      <Box bg="rgba(0, 0, 0, 0.3)" p={6} borderRadius="md" boxShadow="md" mb={8} id="roadmap">
+        <Heading fontSize="2xl" color="yellow.500" mb={4}>
+          Roadmap (No Worries, We Got This!)
+        </Heading>
+        <Text mb={4}>
+          Our plan to take wombats to the top of the DeFi food chain:
+        </Text>
+        <Box as="ul" pl={4}>
+          <Box as="li" mb={4} bg="gray.50" p={4} borderRadius="md">
+            <Text fontWeight="bold">Phase 1: Wombat Awakening</Text>
+            <Text>Presale Launch • Whitepaper Drop • Community Hype</Text>
+          </Box>
+          <Box as="li" mb={4} bg="gray.50" p={4} borderRadius="md">
+            <Text fontWeight="bold">Phase 2: Aussie Stampede</Text>
+            <Text>DEX Listing • Marketing Blitz • Partner Up with Crypto Mates</Text>
+          </Box>
+          <Box as="li" mb={4} bg="gray.50" p={4} borderRadius="md">
+            <Text fontWeight="bold">Phase 3: Wombat Utility Expansion</Text>
+            <Text>
+              Staking & Farming for Passive Rewards • NFT Release • More DeFi
+              Goodies
+            </Text>
+          </Box>
+          <Box as="li" mb={4} bg="gray.50" p={4} borderRadius="md">
+            <Text fontWeight="bold">Phase 4: Going Walkabout</Text>
+            <Text>CEX Listings • Global Charity Initiatives • Major Partnerships</Text>
+          </Box>
+        </Box>
+      </Box>
+
+      {/* Presale Section */}
+      <Box bg="rgba(0, 0, 0, 0.3)" p={6} borderRadius="md" boxShadow="md" mb={8} id="presale">
+        <Heading fontSize="2xl" color="yellow.500" mb={4}>
+          Presale Info (Jump on Before the Sun Sets!)
+        </Heading>
+        <Text mb={4}>
+          Don’t be a galah—join our presale to score GWT at a beaut price before the
+          official launch. We’re chucking in early <strong>passive rewards</strong>{' '}
+          and an exclusive wombat NFT (coming soon!). Fair crack of the whip, it’s
+          your golden ticket into the Wombatverse!
+        </Text>
+        <Button colorScheme="yellow" as="a" href="#connect" mb={4}>
+          Join the Presale
+        </Button>
+        <Text fontSize="sm">*Presale details TBA—stay tuned on our socials!</Text>
+      </Box>
+
+      {/* Links Section */}
+      <Flex
+        direction={{ base: 'column', md: 'row' }}
+        align="center"
+        justify="center"
+        gap={4}
+        mb={8}
+      >
+        <Button
+          as={Link}
+          href="https://t.me/GoldenWombatToken"
+          isExternal
+          colorScheme="yellow"
+        >
+          Join Telegram
+        </Button>
+        <Button
+          as={Link}
+          href="https://twitter.com/GoldenWombatToken"
+          isExternal
+          colorScheme="yellow"
+        >
+          Follow on Twitter
+        </Button>
+      </Flex>
+
+      {/* Footer / Disclaimer */}
+      <Flex
+        direction="column"
+        align="center"
+        bg="gray.800"
+        color="white"
+        p={6}
+        borderRadius="md"
+        mt={8}
+      >
+        <Text>© 2025 Golden Wombat Token. All Rights Reserved.</Text>
+        <Text fontSize="sm" mt={2}>
+          Disclaimer: This site is for entertainment & marketing only. No
+          financial advice—invest responsibly, mates!
+        </Text>
+      </Flex>
+    </Container>
+    </Box>
+    </Box>
+  )
+}
+
+export default Home

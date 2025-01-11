@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Golden Wombat Token - The Most Fair Dinkum Wombat Meme Token on Roburna Chain" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Wombat Token</title>
+
+  <!-- Google Fonts for Some Fun Aussie-Themed Text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Fredoka One', sans-serif;
+      background: linear-gradient(45deg, #f2efe7, #ffefc6);
+      color: #333;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #fbd000;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #443413;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #443413;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+
+    .hero .hero-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .hero-images img {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .hero-text {
+      background: #fbd000;
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .about-wombats, .tokenomics, .roadmap, .presale {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .about-wombats h2,
+    .tokenomics h2,
+    .roadmap h2,
+    .presale h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #fbd000;
+    }
+
+    .about-wombats p,
+    .tokenomics p,
+    .roadmap p,
+    .presale p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .highlight {
+      font-size: 1.2rem;
+      color: #fbd000;
+      font-weight: bold;
+    }
+
+    .token-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .token-info .info-box {
+      background: #f2efe7;
+      flex: 1;
+      min-width: 220px;
+      padding: 1rem;
+      margin: 0.5rem;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .token-info .info-box strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #443413;
+    }
+
+    /* Roadmap */
+    .roadmap ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    .roadmap li {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      background: #f2efe7;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+    }
+
+    /* Links Section */
+    .links-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .links-section a {
+      display: inline-block;
+      background: #fbd000;
+      color: #443413;
+      text-decoration: none;
+      padding: 0.8rem 1.2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .links-section a:hover {
+      background: #ffda33;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #443413;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-text h2 {
+        font-size: 1.6rem;
+      }
+
+      .about-wombats h2,
+      .tokenomics h2,
+      .roadmap h2,
+      .presale h2 {
+        font-size: 1.5rem;
+      }
+
+      .about-wombats p,
+      .tokenomics p,
+      .roadmap p,
+      .presale p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Golden Wombat Token</h1>
+    <p>The Fair Dinkum Wombat-Themed Meme Token on Roburna Chain!</p>
+    <nav>
+      <a href="#about">About Wombats</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#presale">Presale</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-images">
+      <!-- Public domain wombat images from Pixabay -->
+      <img src="public/gold2.png" alt="Wombat 1" />
+    </div>
+    <div class="hero-text">
+      <h2>G’day, Mates! Meet the Golden Wombat!</h2>
+      <p>Uniting Wombat Cuteness with Aussie Spirit and DeFi Innovation</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- ABOUT WOMBATS SECTION -->
+    <section class="about-wombats" id="about">
+      <h2>Why Wombats are so Bloody Great</h2>
+      <p>Wombats are the <span class="highlight">true blue Aussie legends</span> of the marsupial world!
+         Known for their stocky build, powerful digging talents, and adorable round bums,
+         these critters are absolute champs. They even poop in tiny cubes—fair dinkum!
+         That’s nature’s way of saying wombats are top-notch.</p>
+      <p>We’re celebrating these cuddly mates with <strong>Golden Wombat Token</strong> – a cheeky
+         meme token that fuses wombat cuteness with the sweet potential of crypto gains.
+         Jump onboard and get ready for a bonzer ride!</p>
+    </section>
+
+    <!-- TOKENOMICS SECTION -->
+    <section class="tokenomics" id="tokenomics">
+      <h2>Tokenomics (Crikey, Check This Out!)</h2>
+      <p>We’ve got a fair dinkum approach to our tokenomics, designed to reward holders,
+         pump our value, and keep the community stoked! No worries, we’ve got your back.</p>
+
+      <div class="token-info">
+        <div class="info-box">
+          <strong>Token Name:</strong>
+          Golden Wombat Token
+        </div>
+        <div class="info-box">
+          <strong>Symbol:</strong>
+          GWT
+        </div>
+        <div class="info-box">
+          <strong>Network:</strong>
+          Roburna Chain
+        </div>
+        <div class="info-box">
+          <strong>Total Supply:</strong>
+          100,000,000 GWT
+        </div>
+        <div class="info-box">
+          <strong>Buy Tax:</strong>
+          2%
+        </div>
+        <div class="info-box">
+          <strong>Sell Tax:</strong>
+          3%
+        </div>
+        <div class="info-box">
+          <strong>Token Address:</strong>
+          0xF1aCF10Ea8CE2160Acf112B29d028B5f7607192f
+        </div>
+        <div class="info-box">
+          <strong>Creator:</strong>
+          Maximus Wombat
+        </div>
+      </div>
+
+      <p>This beauty packs <span class="highlight">utility</span>, <span class="highlight">passive rewards</span>,
+         and that sweet meme factor, so we can dig our way right to the top.
+         Strap in, mates—we’re headed for a pump!</p>
+    </section>
+
+    <!-- ROADMAP SECTION -->
+    <section class="roadmap" id="roadmap">
+      <h2>Roadmap (Fair Dinkum Strategy)</h2>
+      <p>We’ve got a few roos loose in the top paddock if we think wombats alone will do the trick—so check out our epic roadmap below!</p>
+      <ul>
+        <li><strong>Phase 1: Wombat Awakening</strong><br />
+          <em>Presale Launch</em> • Whitepaper Release • Community Onboarding
+          <br />We’re firing up the barbie, folks. Let’s get this party started!
+        </li>
+        <li><strong>Phase 2: Aussie Stampede</strong><br />
+          Listing on Roburna DEX • Marketing Blitz • Partnerships
+          <br />We’re fixin’ to rustle up a whole herd of supporters. Yeehaw!
+        </li>
+        <li><strong>Phase 3: Wombat Utility Expansion</strong><br />
+          Staking, Farming (Oh, so DeFi!) • Passive Rewards • NFT Release
+          <br />Get a load of these newfangled DeFi goodies. Strewth, it’s next-level stuff.
+        </li>
+        <li><strong>Phase 4: Going Walkabout (Mainstream Adoption)</strong><br />
+          CEX Listings • Global Charity Initiatives • Major Partnerships
+          <br />Time to put wombats on the world stage. Crikey, watch us go big!
+        </li>
+      </ul>
+    </section>
+
+    <!-- PRESALE SECTION -->
+    <section class="presale" id="presale">
+      <h2>Presale Info (Get in Before the Aussie Sun Sets!)</h2>
+      <p>Reckon you're keen to get in early? Join our presale to snag some Golden Wombat Tokens before the official launch.
+         No need to be a stickybeak—just jump in and become part of our wombat-hugging community!</p>
+      <p>During the presale, you’ll get special perks like early <strong>passive rewards</strong>
+         and an exclusive wombat NFT (coming soon!). Fair crack of the whip, it’s your chance to
+         become an OG in the Golden Wombat clan.</p>
+    </section>
+
+    <!-- LINKS SECTION -->
+    <div class="links-section">
+      <a href="https://t.me/GoldenWombatToken" target="_blank">Join Telegram</a>
+      <a href="https://twitter.com/GoldenWombatToken" target="_blank">Follow on Twitter</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Golden Wombat Token. All Rights Reserved.</p>
+    <p>Disclaimer: This page is for entertainment and marketing purposes only and does not constitute financial advice.
+       Invest responsibly, mates!</p>
+  </footer>
+
+</body>
+</html>
